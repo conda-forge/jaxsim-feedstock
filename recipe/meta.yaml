@@ -25,11 +25,14 @@ requirements:
     - python >=3.11
     - coloredlogs
     - jax >=0.4.13
-    - jaxlib
+    - jaxlib >=0.4.13
     - jaxlie >=1.3.0
     - jax-dataclasses >=1.4.0
+    - lxml
+    - mediapy
+    - mujoco >=3.0.0
     - pptree
-    - rod
+    - rod >=0.2.0
 
 test:
   imports:
