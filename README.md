@@ -149,6 +149,3 @@ Feedstock Maintainers
 * [@flferretti](https://github.com/flferretti/)
 * [@traversaro](https://github.com/traversaro/)
 
-
-<!-- dummy commit to enable rerendering -->
-
