@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.11
+    - python >=3.10
     - wheel
     - setuptools >=64
     - setuptools-scm >=8
     - pip
   run:
     - typing-extensions
-    - python >=3.11
+    - python >=3.10
     - coloredlogs
     - jax >=0.4.13
     - jaxlib >=0.4.13
