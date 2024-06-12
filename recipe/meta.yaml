@@ -1,5 +1,5 @@
 {% set name = "jaxsim" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: 4247148a46875541d26f07eb49b95ed6ba755a0eb266e7eaca463b9c7d874d90
+  sha256: f929d01fb6595e4702457fc922c5a1f6e49e20370491b5ebb7d4fa7c031d5055
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm >=8
     - pip
   run:
+    - typing-extensions
     - python >=3.11
     - coloredlogs
     - jax >=0.4.13
@@ -32,7 +33,7 @@ requirements:
     - mediapy
     - mujoco >=3.0.0
     - pptree
-    - rod >=0.2.0
+    - rod >=0.3.0
 
 test:
   imports:
