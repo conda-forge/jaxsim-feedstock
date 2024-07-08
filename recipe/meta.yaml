@@ -48,6 +48,7 @@ test:
   source_files:
     - tests/*
   requires:
+    - git
     - pip
     # Extra [testing] dependencies:
     - idyntree >= 12.2.1
