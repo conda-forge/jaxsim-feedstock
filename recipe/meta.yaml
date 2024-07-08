@@ -44,8 +44,14 @@ test:
   commands:
     - pip check
     - test "$(pip list | grep jaxsim | awk '{print $2}')" == "$PKG_VERSION"
+    - pytest -vv --pyargs jaxsim tests/
   requires:
     - pip
+    # Extra [testing] dependencies:
+    - idyntree >= 12.2.1
+    - pytest >= 6.0
+    - pytest-icdiff
+    - robot_descriptions
 
 about:
   home: https://github.com/ami-iit/jaxsim
