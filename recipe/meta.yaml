@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://github.com/ami-iit/jaxsim
-  summary: A physics engine in reduced coordinates implemented with JAX.
+  summary: A differentiable physics engine and multibody dynamics library for control and robot learning.
   dev_url: https://github.com/ami-iit/jaxsim
   license: BSD-3-Clause
   license_file: LICENSE
