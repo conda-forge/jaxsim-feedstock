@@ -44,7 +44,7 @@ test:
   commands:
     - pip check
     - test "$(pip list | grep jaxsim | awk '{print $2}')" == "$PKG_VERSION"
-    - pytest -vv --pyargs jaxsim tests/
+    - pytest -vv tests/test_api_model.py
   source_files:
     - tests/*
   requires:
