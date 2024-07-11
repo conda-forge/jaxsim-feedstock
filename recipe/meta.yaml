@@ -1,5 +1,5 @@
 {% set name = "jaxsim" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: f929d01fb6595e4702457fc922c5a1f6e49e20370491b5ebb7d4fa7c031d5055
+  sha256: e7567eb267e9c0d7ea3def4aa4176166e143006984eedc2d76c1339e415c568a
 
 build:
   noarch: python
@@ -17,23 +17,26 @@ build:
 requirements:
   host:
     - python >=3.10
+    - pip
+    # From build-system.requires:
     - wheel
     - setuptools >=64
     - setuptools-scm >=8
-    - pip
   run:
-    - typing-extensions
+    # Main dependencies:
     - python >=3.10
     - coloredlogs
     - jax >=0.4.13
     - jaxlib >=0.4.13
     - jaxlie >=1.3.0
     - jax-dataclasses >=1.4.0
+    - pptree
+    - rod >=0.3.0
+    - typing-extensions
+    # Extra [viz] dependencies:
     - lxml
     - mediapy
     - mujoco >=3.0.0
-    - pptree
-    - rod >=0.3.0
 
 test:
   imports:
@@ -41,12 +44,21 @@ test:
   commands:
     - pip check
     - test "$(pip list | grep jaxsim | awk '{print $2}')" == "$PKG_VERSION"
+    - pytest -vv tests/test_api_model.py
+  source_files:
+    - tests/*
   requires:
+    - git
     - pip
+    # Extra [testing] dependencies:
+    - idyntree >= 12.2.1
+    - pytest >= 6.0
+    - pytest-icdiff
+    - robot_descriptions
 
 about:
   home: https://github.com/ami-iit/jaxsim
-  summary: A physics engine in reduced coordinates implemented with JAX.
+  summary: A differentiable physics engine and multibody dynamics library for control and robot learning.
   dev_url: https://github.com/ami-iit/jaxsim
   license: BSD-3-Clause
   license_file: LICENSE

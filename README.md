@@ -7,7 +7,7 @@ Home: https://github.com/ami-iit/jaxsim
 
 Package license: BSD-3-Clause
 
-Summary: A physics engine in reduced coordinates implemented with JAX.
+Summary: A differentiable physics engine and multibody dynamics library for control and robot learning.
 
 Development: https://github.com/ami-iit/jaxsim
 
