@@ -37,6 +37,7 @@ requirements:
     - lxml
     - mediapy
     - mujoco >=3.0.0
+    - scipy
 
 test:
   imports:
