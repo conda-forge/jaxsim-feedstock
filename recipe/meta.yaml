@@ -52,7 +52,7 @@ test:
     - git
     - pip
     # Extra [testing] dependencies:
-    - idyntree >= 12.2.1
+    - idyntree >= 12.4
     - pytest >= 6.0
     - pytest-icdiff
     - robot_descriptions
