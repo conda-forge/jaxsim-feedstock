@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
   sha256: 2b5e3412ceaa5779f49c2215196db0a01904c2a31ebfdabdf5d61f02cc658cd5
 
 build:
