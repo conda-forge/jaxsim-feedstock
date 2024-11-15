@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: 2b5e3412ceaa5779f49c2215196db0a01904c2a31ebfdabdf5d61f02cc658cd5
+  sha256: 656ccf32d4c50cc16754364f58600b3736e838fbee2cd68c26e410954ddab775
 
 build:
   noarch: python
