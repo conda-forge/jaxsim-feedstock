@@ -1,5 +1,6 @@
 {% set name = "jaxsim" %}
 {% set version = "0.5.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     # From build-system.requires:
     - wheel
@@ -24,7 +25,7 @@ requirements:
     - setuptools-scm >=8
   run:
     # Main dependencies:
-    - python >=3.10
+    - python >={{ python_min }}
     - coloredlogs
     - jax >=0.4.13
     - jaxlib >=0.4.13
