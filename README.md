@@ -148,4 +148,5 @@ Feedstock Maintainers
 * [@diegoferigo](https://github.com/diegoferigo/)
 * [@flferretti](https://github.com/flferretti/)
 * [@traversaro](https://github.com/traversaro/)
+* [@xela-95](https://github.com/xela-95/)
 
