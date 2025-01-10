@@ -1,5 +1,5 @@
 {% set name = "jaxsim" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: 656ccf32d4c50cc16754364f58600b3736e838fbee2cd68c26e410954ddab775
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
+  sha256: 3a407f5d6cda2c3c3d6b138557f4506915ed6481d1f0bd7c8b5e8732b01898bc
 
 build:
   noarch: python
@@ -53,6 +53,7 @@ test:
   source_files:
     - tests/*
   requires:
+    - python {{ python_min }}
     - git
     - pip
     # Extra [testing] dependencies:
