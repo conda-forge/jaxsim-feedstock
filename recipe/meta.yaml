@@ -63,8 +63,6 @@ test:
     - pytest-benchmark
     - pytest-icdiff
     - robot_descriptions
-    # TODO: `chex` currently requires this, but it should be removed.
-    - setuptools
 
 about:
   home: https://github.com/ami-iit/jaxsim
