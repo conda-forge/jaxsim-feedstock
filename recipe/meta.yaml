@@ -25,7 +25,6 @@ requirements:
     - setuptools-scm >=8
   run:
     # Main dependencies:
-    - typing_extensions
     - python >={{ python_min }}
     - coloredlogs
     - icub-models
@@ -38,7 +37,7 @@ requirements:
     - qpax
     - rod >=0.3.3
     - trimesh
-    - typing-extensions
+    - typing_extensions
     # Extra [viz] dependencies:
     - lxml
     - mediapy
