@@ -1,5 +1,5 @@
 {% set name = "jaxsim" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: 3a407f5d6cda2c3c3d6b138557f4506915ed6481d1f0bd7c8b5e8732b01898bc
+  sha256: 4121f3acc57700860a84767abdf0aa9402ce84525bc332336d5e4fdd14fcd768
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ requirements:
     - qpax
     - rod >=0.3.3
     - trimesh
-    - typing-extensions
+    - typing_extensions
     # Extra [viz] dependencies:
     - lxml
     - mediapy
