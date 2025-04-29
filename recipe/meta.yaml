@@ -1,5 +1,5 @@
 {% set name = "jaxsim" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: 4121f3acc57700860a84767abdf0aa9402ce84525bc332336d5e4fdd14fcd768
+  sha256: 0e8b239e86de529c89a9390e9fa889ba25327179b2f799cc82482ad54a0dd2f8
 
 build:
   noarch: python
@@ -58,8 +58,8 @@ test:
     - git
     - pip
     # Extra [testing] dependencies:
-    - idyntree >= 12.4
-    - pytest >= 6.0
+    - idyntree >=12.4
+    - pytest >=6.0
     - pytest-benchmark
     - pytest-icdiff
     - robot_descriptions
