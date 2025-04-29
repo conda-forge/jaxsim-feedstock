@@ -58,8 +58,8 @@ test:
     - git
     - pip
     # Extra [testing] dependencies:
-    - idyntree >= 12.4
-    - pytest >= 6.0
+    - idyntree >=12.4
+    - pytest >=6.0
     - pytest-benchmark
     - pytest-icdiff
     - robot_descriptions
