@@ -1,5 +1,5 @@
 {% set name = "jaxsim" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: 0e8b239e86de529c89a9390e9fa889ba25327179b2f799cc82482ad54a0dd2f8
+  sha256: ce55b1ed3aae773fb853f95e215195a8fe90b0270437b7da53de57f03df2d99a
 
 build:
   noarch: python
