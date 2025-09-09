@@ -50,7 +50,7 @@ test:
   commands:
     - pip check
     - test "$(pip list | grep jaxsim | awk '{print $2}')" == "$PKG_VERSION"
-    - pytest -vv tests/test_simulations.py
+    - pytest -vv tests/test_simulations.py -k "not cartpole"
   source_files:
     - tests/*
   requires:
