@@ -1,5 +1,5 @@
 {% set name = "jaxsim" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaxsim-{{ version }}.tar.gz
-  sha256: 7a7d374ddd90328453f47b8baebdbb69ae41d766f2efda2f2a3fbd4cef31685b
+  sha256: 03082ac9116c90c46159339e0c2a2e1e6714114416dd23fb6e5b3458d5a0750a
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - setuptools-scm >=8
   run:
     # Main dependencies:
+    - jax_dataclasses >=1.4.0
     - python >={{ python_min }}
     - coloredlogs
     - icub-models
