@@ -20,9 +20,8 @@ requirements:
     - python {{ python_min }}
     - pip
     # From build-system.requires:
-    - wheel
-    - setuptools >=64
-    - setuptools-scm >=8
+    - hatchling
+    - hatch-vcs
   run:
     # Main dependencies:
     - python >={{ python_min }}
@@ -65,7 +64,7 @@ test:
     - robot_descriptions
 
 about:
-  home: https://github.com/ami-iit/jaxsim
+  home: https://github.com/gbionics/jaxsim
   summary: A differentiable physics engine and multibody dynamics library for control and robot learning.
   dev_url: https://github.com/ami-iit/jaxsim
   license: BSD-3-Clause
