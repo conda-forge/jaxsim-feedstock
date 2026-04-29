@@ -3,7 +3,7 @@ About jaxsim-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jaxsim-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ami-iit/jaxsim
+Home: https://github.com/gbionics/jaxsim
 
 Package license: BSD-3-Clause
 
